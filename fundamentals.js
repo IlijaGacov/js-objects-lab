@@ -31,7 +31,16 @@ console.log("Reg. = " +
 );
 console.log("It is a "+ aCar.colour.extColour +
  " car, " + aCar.milage +" milage, with " +
+
   aCar.colour.interior.texture + " interior.");
 
   console.log('First owner : ' + aCar.previous_owners[1].name + 
   ' - ' + aCar.previous_owners[1].address);
+
+  for (let i = 0 ; i < aCar.previous_owners.length ; i += 1) {
+    console.log(aCar.previous_owners[i].name) ;
+}
+
+for (let p in aCar.type)  {
+  console.log(p.toUpperCase() + ' = ' + aCar.type[p] ) ;
+}
