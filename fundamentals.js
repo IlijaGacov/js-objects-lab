@@ -32,5 +32,6 @@ console.log("Reg. = " +
 console.log("It is a "+ aCar.colour.extColour +
  " car, " + aCar.milage +" milage, with " +
   aCar.colour.interior.texture + " interior.");
+
   console.log('First owner : ' + aCar.previous_owners[1].name + 
   ' - ' + aCar.previous_owners[1].address);
